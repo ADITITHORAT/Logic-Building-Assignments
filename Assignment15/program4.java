@@ -1,5 +1,5 @@
 
-import java.util.Scanner;  //TIME COMPLEXITY O(N)
+import java.util.Scanner;  //TIME COMPLEXITY O(N^2)
 class Pattern
 {
   public void Display(int iRow,int iCol)
