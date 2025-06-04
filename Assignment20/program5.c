@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/************************check ****************************** */
+
 int  Product(int A[] ,int iLength)
 {
   int iCnt = 0,iMul = 1,iCount = 0;
