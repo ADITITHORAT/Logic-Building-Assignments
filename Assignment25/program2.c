@@ -1,18 +1,15 @@
 #include<stdio.h>
 
-void StrUpper(char* str)
+void StrUprX(char* str)
 {
   int iCount = 0; 
   while(*str != '\0')
   {
    if(*str>='a' && *str <= 'z')
    {
-    printf("%c",*str-32);
+    *str = *str-32;
    }
-   else
-   {
-    printf("%c",*str);
-   }
+   
     str++;
   }
  
@@ -23,6 +20,7 @@ int main()
   int iRet = 0;
   printf("Enter string : ");
   scanf("%[^'\n']s",Arr);
-  StrUpper(Arr);
+  StrUprX(Arr);
+  printf("Modified string: %s",Arr);
   return 0;
 }
