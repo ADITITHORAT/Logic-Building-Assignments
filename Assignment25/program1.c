@@ -7,12 +7,9 @@ void StrLower(char* str)
   {
    if(*str>='A' && *str <= 'Z')
    {
-    printf("%c",*str+32);
+    *str = *str+32;
    }
-   else
-   {
-    printf("%c",*str);
-   }
+  
     str++;
   }
  
@@ -24,5 +21,6 @@ int main()
   printf("Enter string : ");
   scanf("%[^'\n']s",Arr);
   StrLower(Arr);
+  printf("Modified string: %s",Arr);
   return 0;
 }
