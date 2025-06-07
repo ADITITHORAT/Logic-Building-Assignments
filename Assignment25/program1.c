@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void StrLower(char* str)
+void StrLwrX(char* str)
 {
   int iCount = 0; 
   while(*str != '\0')
@@ -20,7 +20,7 @@ int main()
   int iRet = 0;
   printf("Enter string : ");
   scanf("%[^'\n']s",Arr);
-  StrLower(Arr);
+  StrLwrX(Arr);
   printf("Modified string: %s",Arr);
   return 0;
 }
