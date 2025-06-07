@@ -7,11 +7,11 @@ void Toggle(char* str)
   {
    if(*str>='a' && *str <= 'z')
    {
-    printf("%c",*str-32);
+     *str = *str-32;
    }
-   else
+   else if( *str >='A' && *str <='Z')
    {
-    printf("%c",*str+32);
+    *str = *str+32;
    }
     str++;
   }
@@ -24,5 +24,6 @@ int main()
   printf("Enter string : ");
   scanf("%[^'\n']s",Arr);
   Toggle(Arr);
+  printf("Modifed string: %s",Arr);
   return 0;
 }
